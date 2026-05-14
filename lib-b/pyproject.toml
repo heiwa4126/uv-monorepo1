@@ -7,8 +7,8 @@ authors = [{ name = "Masato Ota", email = "ohtam@nec.com" }]
 requires-python = ">=3.12"
 dependencies = ["cowsay>=6.1"]
 
-[project.scripts]
-lib-b = "lib_b:main"
+# [project.scripts]
+# lib-b = "lib_b:main"
 
 [build-system]
 requires = ["uv_build>=0.11.14,<0.12.0"]
