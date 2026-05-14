@@ -1,2 +1,5 @@
+from cowsay import get_output_string
+
+
 def say() -> str:
-    return "Hello from lib-b!"
+    return get_output_string("cow", "Hello from lib-b!")

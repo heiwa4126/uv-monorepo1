@@ -1,3 +1,3 @@
 from .say import say
 
-__all__ = [say]
+__all__ = ["say"]

@@ -9,7 +9,7 @@ requires-python = ">=3.12"
 dependencies = ["lib-a", "lib-b"]
 
 [project.scripts]
-my-app = "my_app.__main__:main"
+my-app = "my_app:main"
 
 [tool.uv.sources]
 lib-a = { workspace = true }

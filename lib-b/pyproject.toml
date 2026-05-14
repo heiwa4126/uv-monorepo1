@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 authors = [{ name = "Masato Ota", email = "ohtam@nec.com" }]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = ["cowsay>=6.1"]
 
 [project.scripts]
 lib-b = "lib_b:main"
