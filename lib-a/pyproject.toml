@@ -1,0 +1,15 @@
+[project]
+name = "lib-a"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Masato Ota", email = "ohtam@nec.com" }]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+lib-a = "lib_a:main"
+
+[build-system]
+requires = ["uv_build>=0.11.14,<0.12.0"]
+build-backend = "uv_build"

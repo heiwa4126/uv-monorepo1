@@ -1,0 +1,23 @@
+# envfile = ".env"
+
+[executor]
+type = "uv"
+
+[env]
+SHELL = "bash"
+
+[tasks]
+
+# ======== utilities
+lint = "ruff check ."
+audit = "uv audit"
+clean = "rm -rf dist"
+pack = "uv build"
+
+format_python = "ruff format"
+format_others.shell = "oxfmt"
+format = ["format_python", "format_others"]
+
+update = ["uv_update", "uv_sync"]
+uv_update = "uv lock -U"
+uv_sync = "uv sync --all-packages"

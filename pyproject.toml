@@ -1,0 +1,16 @@
+[project]
+name = "uv-monorepo1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["my-app"]
+
+[tool.uv.sources]
+my-app = { workspace = true }
+
+[tool.uv.workspace]
+members = ["my-app", "lib-a", "lib-b"]
+
+[dependency-groups]
+dev = ["poethepoet>=0.45.0", "ruff>=0.15.12"]

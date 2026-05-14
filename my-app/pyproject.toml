@@ -1,0 +1,23 @@
+[project]
+name = "my-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Masato Ota", email = "ohtam@nec.com" }]
+requires-python = ">=3.12"
+
+dependencies = ["lib-a", "lib-b"]
+
+[project.scripts]
+my-app = "my_app.__main__:main"
+
+[tool.uv.sources]
+lib-a = { workspace = true }
+lib-b = { workspace = true }
+
+[tool.pyright]
+extraPaths = ["../lib-a/src", "../lib-b/src"]
+
+[build-system]
+requires = ["uv_build>=0.11.14,<0.12.0"]
+build-backend = "uv_build"
