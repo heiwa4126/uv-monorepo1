@@ -1,14 +1,14 @@
 [project]
-name = "lib-b"
+name = "lib-a"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-authors = [{ name = "Masato Ota", email = "ohtam@nec.com" }]
+authors = [{ name = "heiwa4126", email = "heiwa4126@gmail.com" }]
 requires-python = ">=3.12"
-dependencies = ["cowsay>=6.1"]
+dependencies = []
 
 # [project.scripts]
-# lib-b = "lib_b:main"
+# lib-a = "lib_a:main"
 
 [build-system]
 requires = ["uv_build>=0.11.14,<0.12.0"]

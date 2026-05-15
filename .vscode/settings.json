@@ -4,6 +4,12 @@
 	"python.terminal.activateEnvInCurrentTerminal": true,
 	"terminal.integrated.env.linux": {
 		"VIRTUAL_ENV": "${workspaceFolder}/.venv",
-		"PATH": "${workspaceFolder}/.venv/bin:${env:PATH}"
-	}
+		"PATH": "${workspaceFolder}/.venv/bin:${env:PATH}",
+	},
+	"chat.tools.terminal.autoApprove": {
+		"/^uv sync$/": {
+			"approve": true,
+			"matchCommandLine": true,
+		},
+	},
 }
