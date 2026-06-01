@@ -16,4 +16,4 @@ lib-b = { workspace = true }
 members = ["src/*"]
 
 [dependency-groups]
-dev = ["poethepoet>=0.45.0", "ruff>=0.15.12"]
+dev = ["poethepoet>=0.46.0", "ruff>=0.15.14"]
