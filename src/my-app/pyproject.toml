@@ -19,5 +19,5 @@ my-app = "my_app:main"
 extraPaths = ["../lib-a/src", "../lib-b/src"]
 
 [build-system]
-requires = ["uv_build>=0.11.14,<0.12.0"]
+requires = ["uv_build>=0.11.24,<0.12.0"]
 build-backend = "uv_build"
